@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Buttons Html</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+            <button onclick="something()" style="font-size: 25px; background-color: grey; color: lightblue; border-radius: 5px;">
+                Click Here!
+            </button>
+            <p id="greeting">Hello</p>
+        <script>
+            function something(){
+                document.getElementById("greeting").innerHTML = "GoodBye";
+            }
+        </script>
+    </body>
+</html>
+
+<!--    Button tag Summary
+1.- button tag is the tag that allows for a visual element to render wihch has the prperty to be clicked
+the "onClick" Attribute lets us call some JS code to execute everytime out button is clicked
+2.- script tag lets us write some JS inside our Html file, it lets us define functions wich can be 
+called by other tags insede the file
+-->
