@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Html Form excercise</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header style="background-color: lightblue;">
+            <h1>Registration Form</h1>
+        </header>
+        <main>
+            <form action="index.html" method="post" enctype="multipart/form-data">
+                <label for="Username">Username</label>
+                <input type="text" id="Username" minlength="6" maxlength="30" placeholder="Username"/>
+                <br/>
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password" minlength="4" maxlength="12" required/>
+                <br/>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="example@mail.com" minlength="6" maxlength="40" required/>
+                <br>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="449-123-4567" minlength="12" maxlength="12" required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                <br>
+                <label for="bday">BirthDay</label>
+                <input type="date" id="bday" required>
+                <br>
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" min="0" max="99" value="1">
+                <br>
+                <label for="title">Title:</label>
+                <label for="Mr">Mr</label>
+                <input type="radio" id="Mr" value="Mr" name="title">
+                <label for="Ms">Mr</label>
+                <input type="radio" id="Ms" value="Ms" name="title">
+                <label for="PhD">PhD</label>
+                <input type="radio" id="PhD" value="PhD" name="title"/>
+                <br>
+                <label for="payment">Payment</label>
+                <select id="payment">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="giftcard">Giftcard</option>
+                </select>
+                <br>
+                <label for="subscribe">Subscribe</label>
+                <input type="checkbox" id="subscribe">
+                <br>
+                <label for="comment">Comment</label>
+                <br>
+                <textarea id="comment" cols="30" rows="10" placeholder="This is an HTML excersice"></textarea>
+                <br>
+                <label for="file">File</label>
+                <input type="file" id="file" accept="image/png, image/jpeg">
+                <br>
+                <input type="submit"/>
+                <input type="reset"/>
+            </form>
+        </main>
+        <footer style="background-color: lightblue;">
+            <h3>Thanks for participating | More about us <a href="">Here!</a></h3>
+        </footer>
+    </body>
+</html>
+
+<!--    Form tag Rundown
+1.-form tag serves to group input tags with the purpose to send data to a backend by using some Http protocol
+2.-input tag is the one that will take some user input, it text by default
+3.-input type="text" lets the user enter characters, it can be limited to a minimun or maximum amount of characters
+and use some pattern matching to validate the input string
+4.-label is the tag that lets us display a text and bound it to another input type
+5.-input type=date, renders a calendar in which the user can pick a date as input
+6.-input type password, lets the user enter characters but it renders them as a circle while typing
+to protect privacy
+7.-input type email, lets the user enter a string, it requires a @ symbol for it to be valid
+8.-input type phone, lets the user enter numbers as a phone number
+9.-input type number, lets the user enter a number or use the up and down arrows to enter the number
+10.-input type radio, lets the user select (or not) a circle 
+11.- select / option tag, renders a list of options of which the user can choose one
+12.- checkbox renders a box that can be checked to mark a 
+13.- textarea renders a inout area (usually a squere or rectnagle) in which the user can type characters
+14.- input type file, lets the user open the file explorer and choose a file to upload, it can restrict the type of files accepted with the accept property
+15.- input type submit makes a post request to the designated server in the action property of the form
+16.- input type reset, cleans all the inputs.
+-->
